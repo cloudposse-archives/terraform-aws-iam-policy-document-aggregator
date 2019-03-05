@@ -85,6 +85,6 @@ data "aws_iam_policy_document" "nine" {
 }
 
 data "aws_iam_policy_document" "default" {
-  source_json   = "${data.aws_iam_policy_document.nine.json}"
-  "statement"   = []
+  source_json = "${data.aws_iam_policy_document.nine.json}"
+  "statement" = []
 }
