@@ -5,7 +5,7 @@
 
 # terraform-aws-iam-policy-document-aggregator
 
- [![Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/cloudposse%2Fterraform-aws-iam-policy-document-aggregator%2Flint?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/cloudposse/terraform-aws-iam-policy-document-aggregator/lint) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcloudposse%2Fterraform-aws-iam-policy-document-aggregator.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcloudposse%2Fterraform-aws-iam-policy-document-aggregator?ref=badge_shield) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-iam-policy-document-aggregator.svg)](https://github.com/cloudposse/terraform-aws-iam-policy-document-aggregator/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+ [![Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/cloudposse%2Fterraform-aws-iam-policy-document-aggregator%2Flint?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/cloudposse/terraform-aws-iam-policy-document-aggregator/lint) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-iam-policy-document-aggregator.svg)](https://github.com/cloudposse/terraform-aws-iam-policy-document-aggregator/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform module to aggregate multiple IAM policy documents into single policy document.
