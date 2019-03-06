@@ -82,7 +82,7 @@ This example creates a single IAM policy document from multiple IAM policy docum
 
 
   module "aggregated_policy" {
-    source = "../"
+    source = "git::https://github.com/cloudposse/terraform-aws-iam-policy-document-aggregator.git?ref=master"
     source_documents = [
       "${data.aws_iam_policy_document.base.json}",
       "${data.aws_iam_policy_document.resource_full_access.json}"
