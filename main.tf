@@ -1,12 +1,3 @@
-resource "null_resource" "source_documents_count_check" {
-  count = "${length(var.source_documents) <= 10 ? 0 : 1}"
-
-  provisioner "local-exec" {
-    command     = "false"
-    interpreter = ["bash", "-c"]
-  }
-}
-
 locals {
   policies = [
     "${length(var.source_documents) > 0 ? element(var.source_documents, 0) : data.aws_iam_policy_document.empty.json}",
