@@ -1,4 +1,5 @@
 locals {
+  ## Workaround to solve this problem https://github.com/hashicorp/terraform/issues/11210
   source_documents = ["${concat(list("null"), var.source_documents)}"]
 
   policies = [
