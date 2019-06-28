@@ -1,5 +1,6 @@
 locals {
   source_documents = ["${concat(list("null"), var.source_documents)}"]
+
   policies = [
     "${length(local.source_documents) > 1 ? element(local.source_documents, 1) : data.aws_iam_policy_document.empty.json}",
     "${length(local.source_documents) > 2 ? element(local.source_documents, 2) : data.aws_iam_policy_document.empty.json}",
