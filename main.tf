@@ -21,64 +21,64 @@ data "aws_iam_policy_document" "empty" {}
 data "aws_iam_policy_document" "zero" {
   source_json   = "${data.aws_iam_policy_document.empty.json}"
   override_json = "${element(local.policies, 0)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "one" {
   source_json   = "${data.aws_iam_policy_document.zero.json}"
   override_json = "${element(local.policies, 1)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "two" {
   source_json   = "${data.aws_iam_policy_document.one.json}"
   override_json = "${element(local.policies, 2)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "three" {
   source_json   = "${data.aws_iam_policy_document.two.json}"
   override_json = "${element(local.policies, 3)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "four" {
   source_json   = "${data.aws_iam_policy_document.three.json}"
   override_json = "${element(local.policies, 4)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "five" {
   source_json   = "${data.aws_iam_policy_document.four.json}"
   override_json = "${element(local.policies, 5)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "six" {
   source_json   = "${data.aws_iam_policy_document.five.json}"
   override_json = "${element(local.policies, 6)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "seven" {
   source_json   = "${data.aws_iam_policy_document.six.json}"
   override_json = "${element(local.policies, 7)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "eight" {
   source_json   = "${data.aws_iam_policy_document.seven.json}"
   override_json = "${element(local.policies, 8)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "nine" {
   source_json   = "${data.aws_iam_policy_document.eight.json}"
   override_json = "${element(local.policies, 9)}"
-  "statement"   = []
+  statement   = []
 }
 
 data "aws_iam_policy_document" "default" {
   source_json = "${data.aws_iam_policy_document.nine.json}"
-  "statement" = []
+  statement = []
 }
