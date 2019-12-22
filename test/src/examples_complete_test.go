@@ -25,7 +25,8 @@ func TestExamplesComplete(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the value of an output variable
-	id := terraform.Output(t, terraformOptions, "result_document")
+	resultDocument := terraform.Output(t, terraformOptions, "result_document")
 	// Verify we're getting back the outputs we expect
-	assert.Contains(t, id, "s3")
+	assert.Contains(t, resultDocument, "\"Sid\": \"BaseAccess\"")
+	assert.Contains(t, resultDocument, "\"Sid\": \"FullAccess\"")
 }
