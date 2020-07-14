@@ -168,7 +168,7 @@ The [`example`](./example) directory contains the example.
 
 | Name | Description |
 |------|-------------|
-| result\_document | Aggregeted IAM policy |
+| result\_document | Aggregated IAM policy |
 
 
 
