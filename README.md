@@ -44,7 +44,7 @@
 
 # terraform-aws-iam-policy-document-aggregator
 
- [![Codefresh Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-iam-policy-document-aggregator?type=cf-1)](https%3A%2F%2Fg.codefresh.io%2Fpublic%2Faccounts%2Fcloudposse%2Fpipelines%2F5dff01436baea5c652de782d) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-iam-policy-document-aggregator.svg)](https://github.com/cloudposse/terraform-aws-iam-policy-document-aggregator/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+ [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-iam-policy-document-aggregator.svg)](https://github.com/cloudposse/terraform-aws-iam-policy-document-aggregator/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform module to aggregate multiple IAM policy documents into single policy document.
@@ -169,6 +169,7 @@ The [`example`](./example) directory contains the example.
 | Name | Description |
 |------|-------------|
 | result\_document | Aggregated IAM policy |
+
 
 
 

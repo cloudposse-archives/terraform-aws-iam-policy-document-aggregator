@@ -22,4 +22,3 @@
 | Name | Description |
 |------|-------------|
 | result\_document | Aggregated IAM policy |
-
