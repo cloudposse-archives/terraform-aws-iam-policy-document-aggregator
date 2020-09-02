@@ -125,18 +125,19 @@ The [`example`](./example) directory contains the example.
 
 
 
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | terraform | >= 0.12.0, < 0.14.0 |
-| aws | ~> 2.0 |
+| aws | >= 2.23, < 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | ~> 2.0 |
+| aws | >= 2.23, < 4.0 |
 
 ## Inputs
 
@@ -150,6 +151,7 @@ The [`example`](./example) directory contains the example.
 |------|-------------|
 | result\_document | Aggregated IAM policy |
 
+<!-- markdownlint-restore -->
 
 
 
