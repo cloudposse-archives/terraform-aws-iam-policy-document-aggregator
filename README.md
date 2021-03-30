@@ -162,13 +162,14 @@ The [`example`](./example) directory contains the example.
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.23 |
+| <a name="requirement_utils"></a> [utils](#requirement\_utils) | >= 0.3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.23 |
-| <a name="provider_utils"></a> [utils](#provider\_utils) | n/a |
+| <a name="provider_utils"></a> [utils](#provider\_utils) | >= 0.3.0 |
 
 ## Modules
 
