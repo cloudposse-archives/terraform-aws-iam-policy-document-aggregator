@@ -12,7 +12,6 @@
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.23 |
-| <a name="provider_utils"></a> [utils](#provider\_utils) | >= 0.3.0 |
 
 ## Modules
 
@@ -23,8 +22,6 @@ No modules.
 | Name | Type |
 |------|------|
 | [aws_iam_policy_document.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
-| [aws_iam_policy_document.empty](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
-| [utils_deep_merge_json.default](https://registry.terraform.io/providers/cloudposse/utils/latest/docs/data-sources/deep_merge_json) | data source |
 
 ## Inputs
 
