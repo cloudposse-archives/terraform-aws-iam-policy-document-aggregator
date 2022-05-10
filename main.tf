@@ -16,59 +16,58 @@ locals {
   ]
 }
 
-data "aws_iam_policy_document" "empty" {
-}
+data "aws_iam_policy_document" "empty" {}
 
 data "aws_iam_policy_document" "zero" {
-  source_json   = data.aws_iam_policy_document.empty.json
-  override_json = element(local.policies, 0)
+  source_policy_documents = [data.aws_iam_policy_document.empty.json]
+  override_json           = element(local.policies, 0)
 }
 
 data "aws_iam_policy_document" "one" {
-  source_json   = data.aws_iam_policy_document.zero.json
-  override_json = element(local.policies, 1)
+  source_policy_documents = [data.aws_iam_policy_document.zero.json]
+  override_json           = element(local.policies, 1)
 }
 
 data "aws_iam_policy_document" "two" {
-  source_json   = data.aws_iam_policy_document.one.json
-  override_json = element(local.policies, 2)
+  source_policy_documents = [data.aws_iam_policy_document.one.json]
+  override_json           = element(local.policies, 2)
 }
 
 data "aws_iam_policy_document" "three" {
-  source_json   = data.aws_iam_policy_document.two.json
-  override_json = element(local.policies, 3)
+  source_policy_documents = [data.aws_iam_policy_document.two.json]
+  override_json           = element(local.policies, 3)
 }
 
 data "aws_iam_policy_document" "four" {
-  source_json   = data.aws_iam_policy_document.three.json
-  override_json = element(local.policies, 4)
+  source_policy_documents = [data.aws_iam_policy_document.three.json]
+  override_json           = element(local.policies, 4)
 }
 
 data "aws_iam_policy_document" "five" {
-  source_json   = data.aws_iam_policy_document.four.json
-  override_json = element(local.policies, 5)
+  source_policy_documents = [data.aws_iam_policy_document.four.json]
+  override_json           = element(local.policies, 5)
 }
 
 data "aws_iam_policy_document" "six" {
-  source_json   = data.aws_iam_policy_document.five.json
-  override_json = element(local.policies, 6)
+  source_policy_documents = [data.aws_iam_policy_document.five.json]
+  override_json           = element(local.policies, 6)
 }
 
 data "aws_iam_policy_document" "seven" {
-  source_json   = data.aws_iam_policy_document.six.json
-  override_json = element(local.policies, 7)
+  source_policy_documents = [data.aws_iam_policy_document.six.json]
+  override_json           = element(local.policies, 7)
 }
 
 data "aws_iam_policy_document" "eight" {
-  source_json   = data.aws_iam_policy_document.seven.json
-  override_json = element(local.policies, 8)
+  source_policy_documents = [data.aws_iam_policy_document.seven.json]
+  override_json           = element(local.policies, 8)
 }
 
 data "aws_iam_policy_document" "nine" {
-  source_json   = data.aws_iam_policy_document.eight.json
-  override_json = element(local.policies, 9)
+  source_policy_documents = [data.aws_iam_policy_document.eight.json]
+  override_json           = element(local.policies, 9)
 }
 
 data "aws_iam_policy_document" "default" {
-  source_json = data.aws_iam_policy_document.nine.json
+  source_policy_documents = [data.aws_iam_policy_document.nine.json]
 }
