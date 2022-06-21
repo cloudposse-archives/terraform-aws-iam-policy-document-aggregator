@@ -32,6 +32,37 @@
 
 Terraform module to aggregate multiple IAM policy documents into single policy document.
 
+# NOTE: This module is now deprecated due to new functionality in the Terraform AWS Provider. See below on migration steps
+
+Now that the AWS provider supports the `override_policy_documents` argument on the `aws_iam_policy_document` data source, this module is no longer necessary. All code using this module can be migrated to natively use the `aws_iam_policy_document` data source by doing the following change:
+
+```hcl
+# Previous module usage:
+module "aggregated_policy" {
+  source  = "cloudposse/iam-policy-document-aggregator/aws"
+  version = "0.8.0"
+
+  source_documents = [
+    data.aws_iam_policy_document.base.json,
+    data.aws_iam_policy_document.resource_full_access.json
+  ]
+}
+```
+
+Replace the above with: 
+```hcl
+data "aws_iam_policy_document" "aggregated" {
+  override_policy_documents = [
+    data.aws_iam_policy_document.base.json,
+    data.aws_iam_policy_document.resource_full_access.json
+  ]
+}
+```
+
+And then update your references to `module.aggregated_policy.result_document` with `data.aws_iam_policy_document.aggregated.json`. 
+
+Please see the discussion in #31 for further details.
+
 ---
 
 This project is part of our comprehensive ["SweetOps"](https://cpco.io/sweetops) approach towards DevOps.
